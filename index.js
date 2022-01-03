@@ -4,18 +4,6 @@ const { writeFile } = require('./utils/generateREADME.js');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
-// Title
-// Description
-// Table of Contents - Autopopulates based on information
-// Installation
-// Usage
-// License
-// Contributing
-// Tests
-// Questions
-    // github Username
-    // email address
-
     const promptUser = () => {
         return inquirer.prompt([
             {
@@ -86,12 +74,52 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
             {
                 type: 'input',
                 name: 'usage',
-                message: 'Enter your project usage (Required)',
+                message: 'Provide instructions and examples for use. Include screenshots as needed later as well. (Required)',
                 validate: usageInput => {
                     if (usageInput) {
                     return true;
                     } else {
-                    console.log('Please enter your project usage');
+                    console.log('Please provide instructions and examples for use');
+                    return false;
+                    }
+                }
+            },
+            {
+                type: 'checkbox',
+                name: 'license',
+                message: 'Please choose a license.',
+                choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0' , 'The Unlicense'],
+                validate: licenseInput => {
+                    if (licenseInput) {
+                    return true;
+                    } else {
+                    console.log('Please select a license.');
+                    return false;
+                    }
+                }
+            },
+            {
+                type: 'input',
+                name: 'contribution',
+                message: 'Enter your contribution guidelines (Required)',
+                validate: contributionInput => {
+                    if (contributionInput) {
+                    return true;
+                    } else {
+                    console.log('Please enter your project contribution guidelines');
+                    return false;
+                    }
+                }
+            },
+            {
+                type: 'input',
+                name: 'test',
+                message: 'Enter your test instructions (Required)',
+                validate: testInput => {
+                    if (testInput) {
+                    return true;
+                    } else {
+                    console.log('Please enter your project test instructions');
                     return false;
                     }
                 }
@@ -99,13 +127,8 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
         ])
     };
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
+// Function call to initialize app and write README file
 promptUser()
     .then(answers => {
         console.log(answers)
