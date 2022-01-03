@@ -61,7 +61,7 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
             {
                 type: 'input',
                 name: 'installation',
-                message: 'Enter your project installation instructions (Required)',
+                message: 'What are the steps required to install your project? (Required)',
                 validate: installationInput => {
                     if (installationInput) {
                     return true;
@@ -88,7 +88,7 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
                 type: 'checkbox',
                 name: 'license',
                 message: 'Please choose a license.',
-                choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0' , 'The Unlicense'],
+                choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla', 'Apache', 'MIT', 'Boost' , 'Unlicense'],
                 validate: licenseInput => {
                     if (licenseInput) {
                     return true;
