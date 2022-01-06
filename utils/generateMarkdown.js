@@ -74,13 +74,13 @@ ${data.description}
 ----------------------------------
 
 ## Table of Contents:
-- [Description](./Readme.md#description)
-- [Installation](./Readme.md#installation)
-- [Usage](./Readme.md#usage)
-- [License](./Readme.md#license)
-- [Contributing](./Readme.md#contributing)
-- [Tests]./Readme.md(#tests)
-- [Questions](./Readme.md#questions)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ----------------------------------
 

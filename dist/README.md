@@ -1,7 +1,7 @@
 
 # Professional README Generator Starter Code
 
-![badge](https://img.shields.io/badge/license-MPL_2.0-blue?style=flat-square)
+![badge](https://img.shields.io/badge/license-Boost 1.0-blue?style=flat-square)
 
 _You can access more badges and their purposes at [shields.io](https://shields.io)_
 
@@ -12,12 +12,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ----------------------------------
 
 ## Table of Contents:
-- [Description](./Readme.md#description)
-- [Installation](./Readme.md#installation)
+- [Description](##-description)
+- [Installation](#-installation)
 - [Usage](./Readme.md#usage)
 - [License](./Readme.md#license)
 - [Contributing](./Readme.md#contributing)
-- [Tests](./Readme.md#tests)
+- [Tests]./Readme.md(#tests)
 - [Questions](./Readme.md#questions)
 
 ----------------------------------
@@ -36,7 +36,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ## License:
 
-NOTICE: This application is covered by [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/). 
+NOTICE: This application is covered by [Boost Software License 1.0](https://choosealicense.com/licenses/bsl-1.0/). 
 
 ## Contributing:
 
