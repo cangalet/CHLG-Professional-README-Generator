@@ -18,7 +18,7 @@ module.exports = templateData => {
   //license
   let licenseOption = `${data.license}`;
   let licenseLink = '';
-  //if conditional to give the license the correct link
+  //if conditional to give the license the correct link and badge name
   if (licenseOption === 'GNU AGPLv3') {
     licenseFullName = 'GNU AGPLv3';
     licenseBadgeName = 'AGPL_v3';
@@ -74,13 +74,13 @@ ${data.description}
 ----------------------------------
 
 ## Table of Contents:
-- [Description](#description)
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contributing](#contributing)
-- [Tests](#tests)
-- [Questions](#questions)
+- [Description](./Readme.md#description)
+- [Installation](./Readme.md#installation)
+- [Usage](./Readme.md#usage)
+- [License](./Readme.md#license)
+- [Contributing](./Readme.md#contributing)
+- [Tests]./Readme.md(#tests)
+- [Questions](./Readme.md#questions)
 
 ----------------------------------
 
