@@ -47,6 +47,9 @@ const licenseData = {
 
 const formatingBadgeData = (licenseOption) => licenseData[licenseOption]
 
-const data = formatingBadgeData('GNU AGPLv3');
+// const data = formatingBadgeData('GNU AGPLv3');
 
-console.log(data[2]);
+const [name, badge, link] = formatingBadgeData('GNU AGPLv3');
+
+// console.log(data[2]);
+console.log(badge);

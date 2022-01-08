@@ -1,10 +1,8 @@
 // TODO: Create a function to generate markdown for README
 module.exports = templateData => {
-
   const data = templateData;
 
-  //license
-
+  //license arrays to pull name, badge name, and link based on user input of chosen license
   const licenseData = {
     'GNU AGPLv3': ['GNU AGPLv3', 'AGPL_v3', 'https://choosealicense.com/licenses/agpl-3.0/'],
     'GNU GPLv3': ['GNU GPLv3', 'GPL_v3', 'https://choosealicense.com/licenses/gpl-3.0/'],
@@ -17,16 +15,13 @@ module.exports = templateData => {
   }
 
   const formatingBadgeData = (licenseOption) => licenseData[licenseOption]
-
-  let licenseOption = formatingBadgeData(`${data.license}`);
-
-
-  console.log(licenseOption);
-
+  // destructure array based on user input
+  const [name, badge, link] = formatingBadgeData(`${data.license}`);
+  // README Template
   return `
 # ${data.title}
 
-![badge](https://img.shields.io/badge/license-${licenseOption[1]}-blue?style=flat-square)
+![badge](https://img.shields.io/badge/license-${badge}-blue?style=flat-square)
 
 _You can access more badges and their purposes at [shields.io](https://shields.io)_
 
@@ -61,7 +56,7 @@ ${data.usage}
 
 ## License:
 
-NOTICE: This application is covered by [${licenseOption[0]}](${licenseOption[2]}). 
+NOTICE: This application is covered by [${name}](${link}). 
 
 ## Contributing:
 
