@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 
 
 // TODO: Create an array of questions for user input
-const promptUser = () => inquire.prompt([
+const promptUser = () => inquirer.prompt([
     {
         type: 'input',
         name: 'github',
@@ -47,9 +47,14 @@ const licenseData = {
 
 const formatingBadgeData = (licenseOption) => licenseData[licenseOption]
 
-// const data = formatingBadgeData('GNU AGPLv3');
+//  const data = formatingBadgeData('GNU AGPLv3');
 
-const [name, badge, link] = formatingBadgeData('GNU AGPLv3');
+ const [name, badge, link] = formatingBadgeData(answers.license);
 
 // console.log(data[2]);
-console.log(badge);
+promptUser()
+
+    .then(answers => {
+        console.log(answers.github)});
+
+console.log(name)

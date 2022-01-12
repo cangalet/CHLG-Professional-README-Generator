@@ -1,7 +1,7 @@
 
-# Professional README generator Starter Code
+# Professional README Generator
 
-![badge](https://img.shields.io/badge/license-MPL_2.0-blue?style=flat-square)
+![badge](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 
 _You can access more badges and their purposes at [shields.io](https://shields.io)_
 
@@ -36,7 +36,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ## License:
 
-NOTICE: This application is covered by [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/). 
+NOTICE: This application is covered by [MIT License](https://choosealicense.com/licenses/mit/). 
 
 ## Contributing:
 
